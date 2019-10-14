@@ -3,9 +3,11 @@ com.tibco.bw.core.design.debug.ui.launch.processesArg=ReadWrite\=readwrite.modul
 com.tibco.bw.core.design.debug.ui.launch.selectedApplications=ReadWrite/
 com.tibco.bw.core.design.debug.ui.launch.selectedModules=ReadWrite.module/
 com.tibco.bw.core.design.debug.ui.launch.selectedProcesses=ReadWrite.module\=readwrite.module.FileReadWrite/
+com.tibco.bw.core.design.debug.ui.view.BWProcessInstanceView+com.tibco.bw.core.design.debug.ui.actions.BWShowInstanceSatckByTempleteAction=true
 eclipse.preferences.version=1
 org.eclipse.debug.ui.DebugView+com.tibco.bw.core.design.debug.ui.actions.BWShowStackByTempleteAction=true
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
 org.eclipse.debug.ui.activate_debug_view=false
 org.eclipse.debug.ui.activate_workbench=false
 preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
+preferredTargets=default\:default|

@@ -11,12 +11,37 @@
   <artifactId>ReadWrite</artifactId>
   <packaging>bwear</packaging>
   <properties>
-    <skipTests>false</skipTests>
+    <externalProfileLoc></externalProfileLoc>
+    <appSpace>Tutorials</appSpace>
+    <keystorePath></keystorePath>
+    <profile>default.substvar</profile>
+    <backup>false</backup>
+    <truststorePath></truststorePath>
+    <domainDesc>Existing Domain</domainDesc>
     <bw.Home>\bw\6.5</bw.Home>
-    <project.type>None</project.type>
+    <agentPort>8079</agentPort>
     <engineDebugPort>8090</engineDebugPort>
-    <failIfNoTests>false</failIfNoTests>
+    <truststorePassword></truststorePassword>
+    <agentAuth></agentAuth>
+    <agentHost>DESKTOP-4L65577</agentHost>
+    <httpPort>8083</httpPort>
+    <appNode>ReadWriteTutorialAppNode</appNode>
+    <osgiPort></osgiPort>
+    <appSpaceDesc>AppSpace for all Tutorials</appSpaceDesc>
+    <redeploy>true</redeploy>
     <tibco.Home>C:\tibcobw6</tibco.Home>
+    <externalProfile>false</externalProfile>
+    <keystorePassword></keystorePassword>
+    <backupLocation></backupLocation>
+    <agentPassword></agentPassword>
+    <skipTests>false</skipTests>
+    <appNodeDesc>App Node for ReadWrite Tutorial</appNodeDesc>
+    <project.type>AppSpace</project.type>
+    <failIfNoTests>false</failIfNoTests>
+    <agentSSL>false</agentSSL>
+    <agentUsername></agentUsername>
+    <domain>TIBCO_BW6_Tutorials</domain>
+    <deployToAdmin>true</deployToAdmin>
   </properties>
   <build>
     <plugins>
@@ -25,6 +50,33 @@
         <artifactId>bw6-maven-plugin</artifactId>
         <version>2.3.1</version>
         <extensions>true</extensions>
+        <configuration>
+          <deployToAdmin>${deployToAdmin}</deployToAdmin>
+          <agentHost>${agentHost}</agentHost>
+          <agentPort>${agentPort}</agentPort>
+          <agentAuth>${agentAuth}</agentAuth>
+          <agentUsername>${agentUsername}</agentUsername>
+          <agentPassword>${agentPassword}</agentPassword>
+          <agentSSL>${agentSSL}</agentSSL>
+          <truststorePath>${truststorePath}</truststorePath>
+          <truststorePassword>${truststorePassword}</truststorePassword>
+          <keystorePath>${keystorePath}</keystorePath>
+          <keystorePassword>${keystorePassword}</keystorePassword>
+          <domain>${domain}</domain>
+          <domainDesc>${domainDesc}</domainDesc>
+          <appSpace>${appSpace}</appSpace>
+          <appSpaceDesc>${appSpaceDesc}</appSpaceDesc>
+          <appNode>${appNode}</appNode>
+          <appNodeDesc>${appNodeDesc}</appNodeDesc>
+          <osgiPort>${osgiPort}</osgiPort>
+          <httpPort>${httpPort}</httpPort>
+          <redeploy>${redeploy}</redeploy>
+          <backup>${backup}</backup>
+          <backupLocation>${backupLocation}</backupLocation>
+          <profile>${profile}</profile>
+          <externalProfile>${externalProfile}</externalProfile>
+          <externalProfileLoc>${externalProfileLoc}</externalProfileLoc>
+        </configuration>
       </plugin>
     </plugins>
   </build>
@@ -37,4 +89,15 @@
       </plugin>
     </plugins>
   </reporting>
+  <profiles>
+    <profile>
+      <id>DEFAULT</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <profile>default.substvar</profile>
+      </properties>
+    </profile>
+  </profiles>
 </project>
