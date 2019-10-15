@@ -1,4 +1,4 @@
-Manifest-Version: 1.0.0.201910141451
+Manifest-Version: 1.0.0.201910151332
 Bundle-SymbolicName: ReadWrite.module
 Bundle-ManifestVersion: 2
 TIBCO-BW-Edition: bwe
@@ -10,7 +10,7 @@ Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
 TIBCO-BW-ConfigProfile: META-INF/default.substvar
 TIBCO-BW-Version: 6.5.0 V63 2018-08-08
 Bundle-Name: ReadWrite Module
-Bundle-Version: 1.0.0.201910141451
+Bundle-Version: 1.0.0.201910151332
 Bundle-ClassPath: .
 TIBCO-BW-ApplicationModule: META-INF/module.bwm
 TIBCO-BW-JobSharedVariables: META-INF/module.jsv

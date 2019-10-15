@@ -32,16 +32,16 @@
     <tibco.Home>C:\tibcobw6</tibco.Home>
     <externalProfile>false</externalProfile>
     <keystorePassword></keystorePassword>
-    <backupLocation></backupLocation>
     <agentPassword></agentPassword>
+    <backupLocation></backupLocation>
     <skipTests>false</skipTests>
-    <appNodeDesc>App Node for ReadWrite Tutorial</appNodeDesc>
     <project.type>AppSpace</project.type>
+    <appNodeDesc>App Node for ReadWrite Tutorial</appNodeDesc>
     <failIfNoTests>false</failIfNoTests>
     <agentSSL>false</agentSSL>
     <agentUsername></agentUsername>
-    <domain>TIBCO_BW6_Tutorials</domain>
     <deployToAdmin>true</deployToAdmin>
+    <domain>TIBCO_BW6_Tutorials</domain>
   </properties>
   <build>
     <plugins>
